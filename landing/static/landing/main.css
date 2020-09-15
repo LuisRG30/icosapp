@@ -1672,7 +1672,7 @@
 	}
 
 	h3 {
-		font-size: 1.75em;
+		font-size: 1.50em;
 	}
 
 		@media screen and (max-width: 480px) {
@@ -1974,11 +1974,11 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
+		background: #ffff;
 		border-radius: 10px;
 		border: none;
-		border: solid 2px #8dcca9;
-		color: #fff;
+		border: solid 2px #3f3a75;
+		color: rgb(0, 0, 0);
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -2921,7 +2921,7 @@
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url(../../images/banner.jpg);
+		background-image: url("bannerbackground.png");
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
@@ -2932,7 +2932,7 @@
 
 		#banner:before {
 			content: '';
-			background: rgba(75, 75, 93, 0.85);
+			background: rgba(25, 25, 66, 0.85);
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -2944,7 +2944,7 @@
 			border-top: 2px solid rgba(255, 255, 255, 0.2);
 			position: relative;
 			z-index: 10005;
-			padding-top: 8em;
+			padding-top: 5em;
 		}
 
 		#banner h1 {
@@ -2952,14 +2952,14 @@
 			font-weight: 400;
 			color: #fff;
 			line-height: 1em;
-			margin: 0 0 1em 0;
+			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
 
 		#banner h3 {
 			font-weight: 400;
 			color: #fff;
-			margin: 0;
+			margin: margin: 0 0 0.25em 0;
 			font-size: 1.5em;
 		}
 
@@ -3115,7 +3115,7 @@
 
 	#footer {
 		padding: 6em 0;
-		background: #6cc091;
+		background: #273a63;
 		color: #fff;
 		text-align: center;
 	}
