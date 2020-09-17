@@ -2707,15 +2707,18 @@
 	#header {
 		color: #fff;
 		cursor: default;
-		height: 4em;
+		height: 4.5em;
 		left: 0;
+		top: 0;
 		line-height: 3.5em;
-		position: absolute;
+		position: fixed;
 		text-align: right;
 		width: 100%;
 		z-index: 10001;
 		background: #273a63;
-		opacity: 100%;
+		opacity: 90%;
+		margin: 0;
+		padding: 0;
 	}
 
 
@@ -2942,6 +2945,14 @@
 	#icoslogo {
 		width: 5%;
 		height: auto;
+	}
+
+	.zoom {
+		transition: transform .2s;
+	}
+
+	.zoom:hover {
+		transform: scale(1.15);
 	}
 
 	#banner {
