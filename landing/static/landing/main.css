@@ -9,6 +9,9 @@
 */
 
 /* Reset */
+	html {
+		scroll-behavior: smooth;
+	}
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -2194,6 +2197,34 @@
 		position: relative;
 	}
 
+	.icontech {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+		font-size: 4em;
+	}
+
+	.icontech:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+}
+
+	.techel {
+		display: flex;
+		border: 1em;
+		text-align: center;
+	}
+	.techel .zoom {
+		padding-left: 0.25em;
+		padding-right: 0.25em;
+		display: inline-block;
+		text-align: center;
+	}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2949,6 +2980,7 @@
 
 	.zoom {
 		transition: transform .2s;
+		text-align: center;
 	}
 
 	.zoom:hover {
