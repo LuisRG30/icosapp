@@ -5,3 +5,6 @@ class TestTestCase(TestCase):
 
     def test_test(self):
         self.assertTrue(True)
+
+    def false_test(self):
+        self.assertFalse(False)
