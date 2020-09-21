@@ -9,9 +9,9 @@
     width: 100%;
     z-index: 10001;
     background: #273a63;
-    opacity: 90%;
+    opacity: 100%;
     margin: 0;
-    padding: 0;
+    justify-content: center;
 }
 
 
@@ -134,12 +134,19 @@
 
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 .feature {
     text-align: center;
     padding: 1em;
     text-justify: center;
+    background-color: #ece8e857;
 }
-
+    
 .option {
     margin-bottom: 1em;
     margin-left: 0.5em;
@@ -149,6 +156,9 @@
     border-style: ridge;
     border-width: 0.1em;
     margin: 0.5em;
+}
+.option:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -163,4 +173,27 @@
 
 .possible {
     border: 0;
+}
+
+
+.estimate {
+    padding-left: 1%;
+    border: auto;
+    margin: auto;
+    color: black;
+    float: right;
+    background: #ffffff;
+    height: inherit;
+    width: 50%;
+    border: #273a63;
+    border-style: double;
+    font-size: large;
+}
+
+#total {
+    padding-right: 1%;
+}
+
+.optrow {
+    padding-top: 5%;
 }

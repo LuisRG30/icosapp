@@ -26,6 +26,10 @@ var selectOption = function(event) {
   calculateEstimate();
 }
 
+//Deselect all 
+
+
+
 
 Array.from(possibleOptions).forEach(function(option) {
   option.addEventListener('click', selectOption);
@@ -36,7 +40,9 @@ var estimate = 0.00;
 var selected = document.getElementsByClassName("selectedop");
 
 var calculateEstimate = function() {
+  estimate = 0.00
   Array.from(selected).forEach(function(selection) {
-    console.log(selection.getAttribute("value"));
+    estimate += parseInt(selection.getAttribute("value"));
   });
+  document.getElementById("total").innerHTML = "$" + estimate;
 }

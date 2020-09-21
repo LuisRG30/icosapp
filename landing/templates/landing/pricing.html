@@ -19,19 +19,42 @@
                 </header>
             </div>
         </section>
-        <header id="pricingcomponents" class ="sticky">
+        <hr>
+        <section id="content">
+            <div class="inner">
+                <h2>Estima el precio de tu aplicación.</h2>
+                <p>Revisa detalles sobre el desarrollo y mantenimiento de tu aplicación, así como los componentes según las necesidades de tu negocio. <br>
+                Elige opciones y genera estimados sin compromiso. Si requieres aún más información y para más detalles, contacto con nosotros en los apartados de contacto.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <div id="pricingcomponents">
 			<div class="inner">
 				<nav id="navp">
-					<a onClick="smoothScroll('#')"><span class="fa fa-rocket"></span> App</a>
-					<a onClick="smoothScroll('#')"><span class="fa fa-server"></span> Servidores</a>
-					<a onClick="smoothScroll('#')"><span class="fa fa-database"></span> Datos</a>
-                    <a onClick="smoothScroll('#')"><span class="fa fa-file"></span> Admin</a>
-                    <div>Estimado Total</div>
+					<a onClick="smoothScroll('#app')"><span class="fa fa-rocket"></span> App</a>
+					<a onClick="smoothScroll('#server')"><span class="fa fa-server"></span> Servidores</a>
+					<a onClick="smoothScroll('#data')"><span class="fa fa-database"></span> Datos</a>
+                    <a onClick="smoothScroll('#admin')"><span class="fa fa-file"></span> Admin</a>
+                    <a onClick="smoothScroll('#navigation')"><span class="fa fa-compass"></span> Navegación</a>
+                    <span class="estimate">
+                        Estimado Total: <strong id="total"> $ 0.00</strong>
+                        <button class="special alt">Reset</button>
+                        <button class="icon fa-download">Descargar</button>
+                    </span>
 				</nav>
                 <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
-        </header>
-        <section id="features">
+        </div>
+        <section id="features flex">
+            <hr>
+            <div id="app" class="inner optrow">
+                <h4>Tipo de aplicación</h4>
+                <h2>Estima el costo inicial de desarrollo de tu app</h2>
+                <p>Considera que en el estimado se pondera el mínimo por aplicación.<br>
+                    Características específicas pueden hacer que el precio varíe.
+                </p>
+            </div>
             <hr>
             <div class="feature flex inner">
                 <div class="option app" value="10">
@@ -63,27 +86,65 @@
                 </div>
             </div>
             <hr>
-            <div class="feature flex">
+            <div id="server" class="feature flex">
                 <div class="option server" value="">Server</div>
                 <div class="option server" value="">Server</div>
                 <div class="option server" value="">Server</div>
                 <div class="option server" value="">Server</div>
             </div>
             <hr>
-            <div class="feature flex">
+            <div id="data" class="feature flex">
                 <div class="option data">Data</div>
                 <div class="option data">Data</div>
                 <div class="option data">Data</div>
                 <div class="option data">Data</div>
             </div>
             <hr>
-            <div class="feature flex">
+            <div id="admin" class="feature flex">
                 <div class="option admin">Admin</div>
                 <div class="option admin">Admin</div>
                 <div class="option admin">Admin</div>
                 <div class="option admin">Admin</div>
+            </div>
+            <hr>
+            <div id="navigation" class="feature flex">
+                <div class="option navigation">Navegación</div>
+                <div class="option navigation">Navegación</div>
+                <div class="option navigation">Navegación</div>
+                <div class="option navigation">Navegación</div>
             </div>
         </section>
+
+        <footer id="footer">
+            <div class="inner">
+    
+                <h3>Contacto</h3>
+    
+                <form action="#" method="post">
+    
+                    <div class="field half first">
+                        <label for="name">Nombre</label>
+                        <input name="name" id="name" type="text" placeholder="Name">
+                    </div>
+                    <div class="field half">
+                        <label for="email">Email</label>
+                        <input name="email" id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="field">
+                        <label for="message">Cuéntanos lo que sea</label>
+                        <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <ul class="actions">
+                        <li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
+                    </ul>
+                </form>
+    
+                <div class="copyright">
+                    Guadalajara, Jalisco, México.
+                </div>
+    
+            </div>
+        </footer>
     </body>
     <script src="{% static 'landing/index.js' %}"></script>
     <script src="{% static 'landing/pricing.js' %}"></script>

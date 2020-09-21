@@ -1764,8 +1764,10 @@
 	}
 
 	.inner {
-		max-width: 75em;
+		max-width: 500em;
 		margin: 0 auto;
+		width: 90%;
+		height: inherit;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -2575,6 +2577,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		outline: 0;
 	}
 
 		input[type="submit"]:hover,
@@ -2781,6 +2784,8 @@
 		#header .inner {
 			margin: 0 auto;
 			position: relative;
+			padding-right: 5em;
+			width: 100%;
 		}
 
 		#header .logo {
@@ -2795,6 +2800,7 @@
 			position: absolute;
 			top: 0;
 			font-size: 1em;
+			margin-left: 2em;
 		}
 
 			#header .logo strong {
@@ -2889,6 +2895,10 @@
 
 	
 /* Nav */
+	#navp {
+		margin-right: 2em;
+		height: inherit;
+	}
 
 	@media screen and (max-width: 980px) {
 
