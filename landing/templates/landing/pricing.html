@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Icosapp</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
+        <link rel="stylesheet" href="{% static 'landing/pricing.css' %}"/>
+		<link rel="icon" href="{% static 'landing/icosahedron.png' %}" type="image/icon type">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section id="banner">
+            <div class="inner">
+                <header>
+                    <h1>ICOS PRICING <img id="icoslogo" src="{% static 'landing/icosahedron.png' %}" class="zoom"></h1>
+                    <h3>Opciones flexibles para todas las necesidades. <br> Desde proyectos personales hasta operaciones empresariales.</h3>
+                </header>
+            </div>
+        </section>
+        <header id="pricingcomponents" class ="sticky">
+			<div class="inner">
+				<nav id="navp">
+					<a onClick="smoothScroll('#')"><span class="fa fa-rocket"></span> App</a>
+					<a onClick="smoothScroll('#')"><span class="fa fa-server"></span> Servidores</a>
+					<a onClick="smoothScroll('#')"><span class="fa fa-database"></span> Datos</a>
+                    <a onClick="smoothScroll('#')"><span class="fa fa-file"></span> Admin</a>
+                    <div>Estimado Total</div>
+				</nav>
+                <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			</div>
+        </header>
+        <section id="features">
+            <hr>
+            <div class="feature flex inner">
+                <div class="option app" value="10">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-briefcase"></span>
+                        <h3><strong>Business</strong></h3>
+                        <p>Interfaz web de negocios.</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option app" value="20">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-code"></span>
+                        <h3><strong>Web</strong></h3>
+                        <p>Desarrollo web en la nube.</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option app" value="30">
+                    <img src="" alt="">
+                    <div>
+						<span class="icon fa-mobile"></span>
+						<h3><strong>Mobile</strong></h3>
+                        <p>Apps móviles a la medida.</p>
+                        <button class="possible">Seleccionar</button>
+					</div>
+                </div>
+            </div>
+            <hr>
+            <div class="feature flex">
+                <div class="option server" value="">Server</div>
+                <div class="option server" value="">Server</div>
+                <div class="option server" value="">Server</div>
+                <div class="option server" value="">Server</div>
+            </div>
+            <hr>
+            <div class="feature flex">
+                <div class="option data">Data</div>
+                <div class="option data">Data</div>
+                <div class="option data">Data</div>
+                <div class="option data">Data</div>
+            </div>
+            <hr>
+            <div class="feature flex">
+                <div class="option admin">Admin</div>
+                <div class="option admin">Admin</div>
+                <div class="option admin">Admin</div>
+                <div class="option admin">Admin</div>
+            </div>
+        </section>
+    </body>
+    <script src="{% static 'landing/index.js' %}"></script>
+    <script src="{% static 'landing/pricing.js' %}"></script>
+	<script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>
+</html>

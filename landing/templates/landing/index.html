@@ -7,39 +7,45 @@
 		<div class="inner">
 			<header>
 				<h1>ICOSAPP <img id="icoslogo" src="{% static 'landing/icosahedron.png' %}" class="zoom"></h1>
-				<h3>Cloud applications on demand.</h3>
+				<h3>Cloud applications, on demand.</h3>
 			</header>
 
 			<div class="flex ">
 
 				<div>
 					<div class="zoom">
+					<a href="" style="text-decoration: none;">
 					<span class="icon fa-briefcase"></span>
 					<h3>Business</h3>
 					<p>Interfaz web de negocios.</p>
+					</a>
 					</div>
 				</div>
 
 				<div>
 					<div class="zoom">
+					<a href="" style="text-decoration: none;">
 					<span class="icon fa-code"></span>
 					<h3>Web</h3>
 					<p>Desarrollo web en la nube.</p>
+					</a>
 					</div>
 				</div>
 
 				<div>
 					<div class="zoom">
+						<a href="" style="text-decoration: none;">
 						<span class="icon fa-mobile"></span>
 						<h3>Mobile</h3>
 						<p>Apps móviles a la medida.</p>
+						</a>
 					</div>
 				</div>
 
 			</div>
 
 			<footer id="start">
-				<a href="#" class="button">Empezar</a>
+				<a href="{% url 'landing:pricing' %}" class="button">Empezar</a>
 			</footer>
 		</div>
 	</section>
@@ -110,7 +116,7 @@
 	</section>
 
 <!--Technologies-->
-<section id="tech">
+<section id="tech" class="wrapper align-center">
 	<div class="inner">
 		<hr>
 		<header>
@@ -204,6 +210,11 @@
 			</section>
 		</div>
 	</div>
+
+	<div class="flex techel">
+
+	</div>
+
 </section>
 
 <!-- Footer -->
