@@ -26,14 +26,22 @@ var selectOption = function(event) {
   calculateEstimate();
 }
 
-//Deselect all 
-
-
-
-
 Array.from(possibleOptions).forEach(function(option) {
   option.addEventListener('click', selectOption);
 });
+
+
+//Clear selections
+
+var clearSelections = function() {
+  toEvaluate = document.getElementsByClassName("option");
+  Array.from(toEvaluate).forEach(function(posibleSelection) {
+    posibleSelection.classList.remove("selectedop");
+  });
+  calculateEstimate();
+}
+
+document.getElementById("reset").addEventListener('click', clearSelections);
 
 //Calculate estimate monthly cost
 var estimate = 0.00;

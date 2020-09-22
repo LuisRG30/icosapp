@@ -142,9 +142,11 @@
 
 .feature {
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
     text-justify: center;
     background-color: #ece8e857;
+    padding-left: 7em;
+    padding-right: 7em;
 }
     
 .option {
@@ -164,7 +166,7 @@
 
 
 .selectedop {
-    color: cornflowerblue;
+    color: rgb(241, 15, 204);
     border: #2f426b;
     border-style: ridge;
     border-width: thin;
