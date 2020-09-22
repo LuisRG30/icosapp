@@ -30,7 +30,7 @@
         </section>
         <hr>
         <div id="pricingcomponents">
-			<div class="inner">
+			<div>
 				<nav id="navp">
 					<a onClick="smoothScroll('#app')"><span class="fa fa-rocket"></span> App</a>
 					<a onClick="smoothScroll('#server')"><span class="fa fa-server"></span> Servidores</a>
@@ -38,9 +38,9 @@
                     <a onClick="smoothScroll('#admin')"><span class="fa fa-file"></span> Admin</a>
                     <a onClick="smoothScroll('#navigation')"><span class="fa fa-compass"></span> Navegación</a>
                     <span class="estimate">
-                        Estimado Total: <strong id="total"> $ 0.00</strong>
-                        <button class="special alt">Reset</button>
-                        <button class="icon fa-download">Descargar</button>
+                        Estimado Mensual: <strong id="total"> $ 0.00</strong>
+                        <button class="special alt pricingaccess">Reset</button>
+                        <button class="icon fa-download pricingaccess">Descargar</button>
                     </span>
 				</nav>
                 <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -86,32 +86,195 @@
                 </div>
             </div>
             <hr>
-            <div id="server" class="feature flex">
-                <div class="option server" value="">Server</div>
-                <div class="option server" value="">Server</div>
-                <div class="option server" value="">Server</div>
-                <div class="option server" value="">Server</div>
+            <div id="server" class="inner optrow">
+                <h4>Tamaño de servidores</h4>
+                <h2>Configura la potencia de tus aplicaciones</h2>
+                <p>Según el número de usuarios que tengas, serán necesarias diferentes cargas en servidores.<br>
+                    Ofrecemos opciones flexibles. Planes desde 500 horas al mes hasta servicio ilimitado.
+                </p>
             </div>
             <hr>
-            <div id="data" class="feature flex">
-                <div class="option data">Data</div>
-                <div class="option data">Data</div>
-                <div class="option data">Data</div>
-                <div class="option data">Data</div>
+            <div class="feature flex">
+                <div class="option server" value="">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-server"></span>
+                        <h3><strong>Server</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option server" value="">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-server"></span>
+                        <h3><strong>Server</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option server" value="">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-server"></span>
+                        <h3><strong>Server</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option server" value="">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-server"></span>
+                        <h3><strong>Server</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
             </div>
             <hr>
-            <div id="admin" class="feature flex">
-                <div class="option admin">Admin</div>
-                <div class="option admin">Admin</div>
-                <div class="option admin">Admin</div>
-                <div class="option admin">Admin</div>
+
+            <div id="data" class="inner optrow">
+                <h4>Data Services</h4>
+                <h2>Elige aprovechar y mantener a salvo la información</h2>
+                <p>Selecciona las conexiones y espacio que necesitas.<br>
+                    Carga sólo lo que tu aplicación web necesita.
+                </p>
             </div>
             <hr>
-            <div id="navigation" class="feature flex">
-                <div class="option navigation">Navegación</div>
-                <div class="option navigation">Navegación</div>
-                <div class="option navigation">Navegación</div>
-                <div class="option navigation">Navegación</div>
+            <div class="feature flex">
+                <div class="option data">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-database"></span>
+                        <h3><strong>Data</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option data">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-database"></span>
+                        <h3><strong>Data</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option data">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-database"></span>
+                        <h3><strong>Data</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option data">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-database"></span>
+                        <h3><strong>Data</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div id="admin" class="inner optrow">
+                <h4>Admin Panel</h4>
+                <h2>Instalamos páneles administrativos</h2>
+                <p>Mejora la administración de tu página y reduce su mantenimiento.<br>
+                    Ten acceso directo a la información para usarla como quieras.
+                </p>
+            </div>
+            <hr>
+            <div class="feature flex">
+                <div class="option admin">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-file"></span>
+                        <h3><strong>Data</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option admin">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-file"></span>
+                        <h3><strong>Admin</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option admin">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-file"></span>
+                        <h3><strong>Admin</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option admin">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-file"></span>
+                        <h3><strong>Admin</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div id="navigation" class="inner optrow">
+                <h4>Navegación</h4>
+                <h2>Dale la mejor experiencia a tus clientes</h2>
+                <p>Detalla el número y tipo de vistas y diseños que necesitas.<br>
+                    Determina cómo será la experiencia de tus usuarios.
+                </p>
+            </div>
+            <hr>
+            <div class="feature flex">
+                <div class="option navigation">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-compass"></span>
+                        <h3><strong>Navegación</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option navigation">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-compass"></span>
+                        <h3><strong>Navegación</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option navigation">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-compass"></span>
+                        <h3><strong>Navegación</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="option navigation">
+                    <img src="" alt="">
+                    <div>
+                        <span class="icon fa-compass"></span>
+                        <h3><strong>Navegación</strong></h3>
+                        <p>Básico</p>
+                        <button class="possible">Seleccionar</button>
+                    </div>
+                </div>
             </div>
         </section>
 

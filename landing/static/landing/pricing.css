@@ -184,10 +184,11 @@
     float: right;
     background: #ffffff;
     height: inherit;
-    width: 50%;
+    width: 45%;
     border: #273a63;
     border-style: double;
     font-size: large;
+    text-align: center;
 }
 
 #total {
@@ -196,4 +197,8 @@
 
 .optrow {
     padding-top: 5%;
+}
+
+.pricingaccess {
+    font-size: x-small;
 }

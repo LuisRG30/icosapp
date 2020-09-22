@@ -1,10 +1,11 @@
 from django.test import TestCase, Client
 
 # Create your tests here.
-class TestTestCase(TestCase):
+class LandingTestCase(TestCase):
 
-    def test_test(self):
-        self.assertTrue(True)
-
-    def false_test(self):
-        self.assertFalse(False)
+    def test_load(self):
+        c = Client()
+        response = c.get("/")
+        self.assertEqual(response.status_code, 200)
+        response = c.get("/pricing")
+        self.assertEqual(response.status_code, 200)

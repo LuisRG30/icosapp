@@ -2898,6 +2898,7 @@
 	#navp {
 		margin-right: 2em;
 		height: inherit;
+		width: 100%;
 	}
 
 	@media screen and (max-width: 980px) {

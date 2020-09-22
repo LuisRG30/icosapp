@@ -44,5 +44,13 @@ var calculateEstimate = function() {
   Array.from(selected).forEach(function(selection) {
     estimate += parseInt(selection.getAttribute("value"));
   });
-  document.getElementById("total").innerHTML = "$" + estimate;
+  var thousands = parseInt(estimate/1000);
+  var units = estimate%1000;
+  if (thousands == 0) {
+    var total = units + ".00";
+  } else {
+    var total = thousands + "," + units + ".00";
+  }
+  console.log(total);
+  document.getElementById("total").innerHTML = "$" + total;
 }
