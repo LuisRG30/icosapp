@@ -39,6 +39,7 @@ var clearSelections = function() {
     posibleSelection.classList.remove("selectedop");
   });
   calculateEstimate();
+  document.getElementById("total").innerHTML = "$" + "0.00";
 }
 
 document.getElementById("reset").addEventListener('click', clearSelections);
@@ -54,11 +55,14 @@ var calculateEstimate = function() {
   });
   var thousands = parseInt(estimate/1000);
   var units = estimate%1000;
+  if (units == 0 && estimate != 0) {
+    units = "000";
+  }
   if (thousands == 0) {
     var total = units + ".00";
   } else {
     var total = thousands + "," + units + ".00";
   }
-  console.log(total);
+  var money = (thousands * 1000) + units;
   document.getElementById("total").innerHTML = "$" + total;
 }

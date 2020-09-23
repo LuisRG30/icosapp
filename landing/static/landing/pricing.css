@@ -144,9 +144,9 @@
     text-align: center;
     padding: 1.5em;
     text-justify: center;
-    background-color: #ece8e857;
-    padding-left: 7em;
-    padding-right: 7em;
+    background-color: #e6e3e344;
+    padding-left: 6em;
+    padding-right: 6em;
 }
     
 .option {
@@ -166,8 +166,9 @@
 
 
 .selectedop {
-    color: rgb(241, 15, 204);
+    color: rgb(245, 125, 239);
     border: #2f426b;
+    background-color: #ffff;
     border-style: ridge;
     border-width: thin;
     
