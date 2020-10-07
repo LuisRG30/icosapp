@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
 /*
@@ -3205,6 +3204,17 @@
 				font-size: 1.5em;
 			}
 
+		}
+
+/* Info */
+
+		.stepdiv {
+			width: 33%;
+			text-align: center;
+		}
+
+		.stepimg {
+			width: inherit;
 		}
 
 /* Footer */
