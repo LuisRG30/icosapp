@@ -6,7 +6,7 @@
 	<section id="banner">
 		<div class="inner">
 			<header>
-				<h1>ICOSAPP <img id="icoslogo" src="{% static 'landing/icosahedron.png' %}" class="zoom"></h1>
+				<h1>ICOSAEDRO <img id="icoslogo" src="{% static 'landing/icosahedron.png' %}" class="zoom"></h1>
 				<h3>Cloud applications, on demand.</h3>
 			</header>
 
@@ -45,7 +45,7 @@
 			</div>
 
 			<footer id="start">
-				<a href="{% url 'landing:pricing' %}" class="button">Empezar</a>
+				<a href="{% url 'landing:select' %}" class="button">Empezar</a>
 			</footer>
 		</div>
 	</section>
@@ -77,20 +77,29 @@
 					<h2>¿Qué hago?</h2>
 					<div class="flex">
 						<div class="stepdiv zoom">
+							<a href="{% url 'landing:select' %}" class="stepa">
 							<img src="{% static 'landing/step1.png' %}" alt="" class="stepimg">
 							<h3>Encuentra lo que buscas</h3>
+							<p>Navegando en la página, encuentra las opciones que satisfagan tus nececidades. <br> También puedes dejar tus datos de contacto con tus dados en el apartado de contacto.</p>
+							</a>
 						</div>
 						<div class="stepdiv zoom">
+							<a href="{% url 'landing:contacto' %}" class="stepa">
 							<img src="{% static 'landing/step2.png' %}" alt="" class="stepimg">
 							<h3>Comunícate con nosotros</h3>
+							<p>Una vez en contacto con nuestro equipo, te haremos saber lo necesario para poner en marcha tu presencia en internet. <br> Te ayudamos a identificar qué recursos necesitas.</p>
+							</a>
 						</div>
 						<div class="stepdiv zoom">
+							<a href="{% url 'landing:desarrollo' %}" class="stepa">
 							<img src="{% static 'landing/step3.png' %}" alt="" class="stepimg">
 							<h3>Revisa continuamente el desarrollo</h3>
+							<p>Puedes revisar el progreso de tu pedido directamente con los desarrolladores. <br> Ve los cambios suceder en tiempo real.</p>
+							</a>
 						</div>
 					</div>
 				</section>
-			</div>
+			</div>		
 		</div>
 
 		<div class="flex techel">
