@@ -6,4 +6,7 @@ from . import views
 urlpatterns = [
     path("", views.index, name="index"),
     path("pricing/", views.pricing, name="pricing"),
+    path("business/", views.business, name="business"),
+    path("web/", views.web, name="web"),
+    path("mobile/", views.mobile, name="mobile"),
 ]
