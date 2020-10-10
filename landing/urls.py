@@ -10,4 +10,7 @@ urlpatterns = [
     path("desarrollo", views.desarrollo, name="desarrollo"),
     path("pricing", views.pricing, name="pricing"),
     path("message", views.receive_message, name="message"),
+    path("business", views.business, name="business"),
+    path("web", views.web, name="web"),
+    path("mobile", views.mobile, name="mobile"),
 ]
