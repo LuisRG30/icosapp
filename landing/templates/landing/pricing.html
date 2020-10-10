@@ -1,330 +1,322 @@
 {% extends 'landing/layout.html' %}
 {% load static %}
 {% block css %} <link rel="stylesheet" href="{% static 'landing/pricing.css' %}"/> {% endblock %}
-<!DOCTYPE html>
-{% block body %}
-        <section id="banner">
-            <div class="inner">
-                <header>
-                    <h1>ICOS PRICING <img id="icoslogo" src="{% static 'landing/icosahedron.png' %}" class="zoom"></h1>
-                    <h3>Opciones flexibles para todas las necesidades. <br> Desde proyectos personales hasta operaciones empresariales.</h3>
-                </header>
-            </div>
-        </section>
-        <hr>
-        <section id="content">
-            <div class="inner">
-                <h2>Estima el precio de tu aplicación.</h2>
-                <p>Revisa detalles sobre el desarrollo y mantenimiento de tu aplicación, así como los componentes según las necesidades de tu negocio. <br>
-                Elige opciones y genera estimados sin compromiso. Si requieres aún más información, y para más detalles, contacta con nosotros en los apartados de contacto.
-                </p>
-            </div>
-        </section>
-        <hr>
-        <div id="pricingcomponents">
-			<div>
-				<nav id="navp">
-					<a onClick="smoothScroll('#app')"><span class="fa fa-rocket"></span> App</a>
-					<a onClick="smoothScroll('#server')"><span class="fa fa-server"></span> Servidores</a>
-					<a onClick="smoothScroll('#data')"><span class="fa fa-database"></span> Datos</a>
-                    <a onClick="smoothScroll('#admin')"><span class="fa fa-file"></span> Admin</a>
-                    <a onClick="smoothScroll('#navigation')"><span class="fa fa-compass"></span> Navegación</a>
-                    <span class="estimate">
-                        Estimado Mensual: <strong id="total"> $ 0.00</strong>
-                        <button id="reset" class="special alt pricingaccess">Reset</button>
-                        <button class="icon fa-download pricingaccess">Descargar</button>
-                    </span>
-				</nav>
-                <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-			</div>
-        </div>
-        <section id="features flex">
-            <hr>
-            <div id="app" class="inner optrow">
-                <h4>Tipo de aplicación</h4>
-                <h2>Estima el costo de operación de tu app</h2>
-                <p>Considera que en el estimado final se pondera el mínimo por aplicación.<br>
-                    Características específicas posteriores pueden hacer que el precio varíe.
-                </p>
-            </div>
-            <hr>
-            <div class="feature flex inner">
-                <div class="option" value="0">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-briefcase"></span>
-                        <h3><strong>Business</strong></h3>
-                        <p>Interfaz web de negocios.</p>
-                        <button class="possible  app">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="0">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-code"></span>
-                        <h3><strong>Web</strong></h3>
-                        <p>Desarrollo web en la nube.</p>
-                        <button class="possible app">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="0">
-                    <img src="" alt="">
-                    <div>
-						<span class="icon fa-mobile"></span>
-						<h3><strong>Mobile</strong></h3>
-                        <p>Apps móviles a la medida.</p>
-                        <button class="possible  app">Seleccionar</button>
-					</div>
-                </div>
-            </div>
-            <hr>
-            <div id="server" class="inner optrow">
-                <h4>Tamaño de servidores</h4>
-                <h2>Configura la potencia de tus aplicaciones</h2>
-                <p>Según el número de usuarios que tengas, serán necesarias diferentes cargas en servidores.<br>
-                    Ofrecemos opciones flexibles. Planes desde 500 horas al mes hasta servicio ilimitado.
-                </p>
-            </div>
-            <hr>
-            <div class="feature flex">
-                <div class="option" value="100">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-server"></span>
-                        <h3><strong>Basic</strong></h3>
-                        <p>Lo elemental para tu sitio.</p>
-                        <button class="possible server">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="400">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-server"></span>
-                        <h3><strong>Standard</strong></h3>
-                        <p>Resultados competitivos.</p>
-                        <button class="possible server">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="1200">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-server"></span>
-                        <h3><strong>Performance</strong></h3>
-                        <p>Potencia superior.</p>
-                        <button class="possible server">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="2500">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-server"></span>
-                        <h3><strong>Advanced</strong></h3>
-                        <p>Respuesta a tráfico masivo.</p>
-                        <button class="possible server">Seleccionar</button>
-                    </div>
-                </div>
-            </div>
-            <hr>
+{% block header %} ICOS PRICING {% endblock %}
+{% block header_desc %} Opciones flexibles para todas las necesidades. <br> Desde proyectos personales hasta operaciones empresariales.{% endblock %}
+{%  block body %}
+      <section id="content">
+          <div class="inner">
+              <h2>Estima el precio de tu aplicación.</h2>
+              <p>Revisa detalles sobre el desarrollo y mantenimiento de tu aplicación, así como los componentes según las necesidades de tu negocio. <br>
+              Elige opciones y genera estimados sin compromiso. Si requieres aún más información, y para más detalles, contacta con nosotros en los apartados de contacto.
+              </p>
+          </div>
+      </section>
+      <hr>
+      <div id="pricingcomponents">
+		<div>
+			<nav id="navp">
+				<a onClick="smoothScroll('#app')"><span class="fa fa-rocket"></span> App</a>
+				<a onClick="smoothScroll('#server')"><span class="fa fa-server"></span> Servidores</a>
+				<a onClick="smoothScroll('#data')"><span class="fa fa-database"></span> Datos</a>
+                  <a onClick="smoothScroll('#admin')"><span class="fa fa-file"></span> Admin</a>
+                  <a onClick="smoothScroll('#navigation')"><span class="fa fa-compass"></span> Navegación</a>
+                  <span class="estimate">
+                      Estimado Mensual: <strong id="total"> $ 0.00</strong>
+                      <button id="reset" class="special alt pricingaccess">Reset</button>
+                      <button class="icon fa-download pricingaccess">Descargar</button>
+                  </span>
+			</nav>
+              <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		</div>
+      </div>
+      <section id="features flex">
+          <hr>
+          <div id="app" class="inner optrow">
+              <h4>Tipo de aplicación</h4>
+              <h2>Estima el costo de operación de tu app</h2>
+              <p>Considera que en el estimado final se pondera el mínimo por aplicación.<br>
+                  Características específicas posteriores pueden hacer que el precio varíe.
+              </p>
+          </div>
+          <hr>
+          <div class="feature flex inner">
+              <div class="option" value="0">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-briefcase"></span>
+                      <h3><strong>Business</strong></h3>
+                      <p>Interfaz web de negocios.</p>
+                      <button class="possible  app">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="0">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-code"></span>
+                      <h3><strong>Web</strong></h3>
+                      <p>Desarrollo web en la nube.</p>
+                      <button class="possible app">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="0">
+                  <img src="" alt="">
+                  <div>
+					<span class="icon fa-mobile"></span>
+					<h3><strong>Mobile</strong></h3>
+                      <p>Apps móviles a la medida.</p>
+                      <button class="possible  app">Seleccionar</button>
+				</div>
+              </div>
+          </div>
+          <hr>
+          <div id="server" class="inner optrow">
+              <h4>Tamaño de servidores</h4>
+              <h2>Configura la potencia de tus aplicaciones</h2>
+              <p>Según el número de usuarios que tengas, serán necesarias diferentes cargas en servidores.<br>
+                  Ofrecemos opciones flexibles. Planes desde 500 horas al mes hasta servicio ilimitado.
+              </p>
+          </div>
+          <hr>
+          <div class="feature flex">
+              <div class="option" value="100">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-server"></span>
+                      <h3><strong>Basic</strong></h3>
+                      <p>Lo elemental para tu sitio.</p>
+                      <button class="possible server">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="400">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-server"></span>
+                      <h3><strong>Standard</strong></h3>
+                      <p>Resultados competitivos.</p>
+                      <button class="possible server">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="1200">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-server"></span>
+                      <h3><strong>Performance</strong></h3>
+                      <p>Potencia superior.</p>
+                      <button class="possible server">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="2500">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-server"></span>
+                      <h3><strong>Advanced</strong></h3>
+                      <p>Respuesta a tráfico masivo.</p>
+                      <button class="possible server">Seleccionar</button>
+                  </div>
+              </div>
+          </div>
+          <hr>
 
-            <div id="data" class="inner optrow">
-                <h4>Data Services</h4>
-                <h2>Elige aprovechar y mantener a salvo la información</h2>
-                <p>Selecciona las conexiones y espacio que necesitas.<br>
-                    Carga sólo lo que tu aplicación web necesita.
-                </p>
-            </div>
-            <hr>
-            <div class="feature flex">
-                <div class="option" value="150">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-database"></span>
-                        <h3><strong>Lite</strong></h3>
-                        <p>Base de datos funamental <br>
-                            adecuada para operaciones medianas.</p>
-                        <button class="possible data">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="400">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-database"></span>
-                        <h3><strong>In-House</strong></h3>
-                        <p>Alta capacidad para uso organizacional <br>
-                            y almacenaje competitivo.</p>
-                        <button class="possible data">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="1200">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-database"></span>
-                        <h3><strong>Premium</strong></h3>
-                        <p>Soporte intensivo de usuarios <br>
-                        y espacio ilimitado.</p>
-                        <button class="possible data">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="4000">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-database"></span>
-                        <h3><strong>Vault</strong></h3>
-                        <p>Espacio ilimitado, amplia disponibilidad <br>
-                             y máxima seguridad.</p>
-                        <button class="possible data">Seleccionar</button>
-                    </div>
-                </div>
-            </div>
-            <hr>
+          <div id="data" class="inner optrow">
+              <h4>Data Services</h4>
+              <h2>Elige aprovechar y mantener a salvo la información</h2>
+              <p>Selecciona las conexiones y espacio que necesitas.<br>
+                  Carga sólo lo que tu aplicación web necesita.
+              </p>
+          </div>
+          <hr>
+          <div class="feature flex">
+              <div class="option" value="150">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-database"></span>
+                      <h3><strong>Lite</strong></h3>
+                      <p>Base de datos funamental <br>
+                          adecuada para operaciones medianas.</p>
+                      <button class="possible data">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="400">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-database"></span>
+                      <h3><strong>In-House</strong></h3>
+                      <p>Alta capacidad para uso organizacional <br>
+                          y almacenaje competitivo.</p>
+                      <button class="possible data">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="1200">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-database"></span>
+                      <h3><strong>Premium</strong></h3>
+                      <p>Soporte intensivo de usuarios <br>
+                      y espacio ilimitado.</p>
+                      <button class="possible data">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="4000">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-database"></span>
+                      <h3><strong>Vault</strong></h3>
+                      <p>Espacio ilimitado, amplia disponibilidad <br>
+                           y máxima seguridad.</p>
+                      <button class="possible data">Seleccionar</button>
+                  </div>
+              </div>
+          </div>
+          <hr>
 
-            <div id="admin" class="inner optrow">
-                <h4>Admin Panel</h4>
-                <h2>Instalamos páneles administrativos</h2>
-                <p>Mejora la administración de tu página y reduce su mantenimiento.<br>
-                    Ten acceso directo a la información para usarla como quieras.
-                </p>
-            </div>
-            <hr>
-            <div class="feature flex">
-                <div class="option" value="200">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-file"></span>
-                        <h3><strong>Entrepreneur</strong></h3>
-                        <p>Administración fundamental. <br>
-                        Usuarios limitados.</p>
-                        <button class="possible admin">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="500">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-file"></span>
-                        <h3><strong>Carreer</strong></h3>
-                        <p>Opciones personalizadas <br>
-                        para equipos de trabajo.</p>
-                        <button class="possible admin">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="1500">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-file"></span>
-                        <h3><strong>Management</strong></h3>
-                        <p>Alta capcidad de usuarios <br>
-                        y opciones avanzadas.</p>
-                        <button class="possible admin">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="4000">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-file"></span>
-                        <h3><strong>Executive</strong></h3>
-                        <p>Desarrollo completamente <br>
-                        personalizado sobre pedido.</p>
-                        <button class="possible admin">Seleccionar</button>
-                    </div>
-                </div>
-            </div>
-            <hr>
+          <div id="admin" class="inner optrow">
+              <h4>Admin Panel</h4>
+              <h2>Instalamos páneles administrativos</h2>
+              <p>Mejora la administración de tu página y reduce su mantenimiento.<br>
+                  Ten acceso directo a la información para usarla como quieras.
+              </p>
+          </div>
+          <hr>
+          <div class="feature flex">
+              <div class="option" value="200">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-file"></span>
+                      <h3><strong>Entrepreneur</strong></h3>
+                      <p>Administración fundamental. <br>
+                      Usuarios limitados.</p>
+                      <button class="possible admin">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="500">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-file"></span>
+                      <h3><strong>Carreer</strong></h3>
+                      <p>Opciones personalizadas <br>
+                      para equipos de trabajo.</p>
+                      <button class="possible admin">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="1500">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-file"></span>
+                      <h3><strong>Management</strong></h3>
+                      <p>Alta capcidad de usuarios <br>
+                      y opciones avanzadas.</p>
+                      <button class="possible admin">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="4000">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-file"></span>
+                      <h3><strong>Executive</strong></h3>
+                      <p>Desarrollo completamente <br>
+                      personalizado sobre pedido.</p>
+                      <button class="possible admin">Seleccionar</button>
+                  </div>
+              </div>
+          </div>
+          <hr>
 
-            <div id="navigation" class="inner optrow">
-                <h4>Navegación</h4>
-                <h2>Dale la mejor experiencia a tus clientes</h2>
-                <p>Detalla el número y tipo de vistas y diseños que necesitas.<br>
-                    Determina cómo será la experiencia de tus usuarios.
-                </p>
-            </div>
-            <hr>
-            <div class="feature flex">
-                <div class="option" value="100">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-compass"></span>
-                        <h3><strong>Raft</strong></h3>
-                        <p>Navegadores y páginas esenciales. <br>
-                        Ahorra con estéticas predefinidas.</p>
-                        <button class="possible navigation">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="350">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-compass"></span>
-                        <h3><strong>Ship</strong></h3>
-                        <p>Incorpara numerosas vistas con <br>
-                        funcionalidad específica.</p>
-                        <button class="possible navigation">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="1200">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-compass"></span>
-                        <h3><strong>Vessel</strong></h3>
-                        <p>Decubre diseños personalizados <br>
-                            y máxima interactividad.
-                        </p>
-                        <button class="possible navigation">Seleccionar</button>
-                    </div>
-                </div>
-                <div class="option" value="2500">
-                    <img src="" alt="">
-                    <div>
-                        <span class="icon fa-compass"></span>
-                        <h3><strong>Tanker</strong></h3>
-                        <p>Construcción integral, incluyendo diseño <br>
-                        y navegación por página.</p>
-                        <button class="possible navigation">Seleccionar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div id="navigation" class="inner optrow">
+              <h4>Navegación</h4>
+              <h2>Dale la mejor experiencia a tus clientes</h2>
+              <p>Detalla el número y tipo de vistas y diseños que necesitas.<br>
+                  Determina cómo será la experiencia de tus usuarios.
+              </p>
+          </div>
+          <hr>
+          <div class="feature flex">
+              <div class="option" value="100">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-compass"></span>
+                      <h3><strong>Raft</strong></h3>
+                      <p>Navegadores y páginas esenciales. <br>
+                      Ahorra con estéticas predefinidas.</p>
+                      <button class="possible navigation">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="350">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-compass"></span>
+                      <h3><strong>Ship</strong></h3>
+                      <p>Incorpara numerosas vistas con <br>
+                      funcionalidad específica.</p>
+                      <button class="possible navigation">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="1200">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-compass"></span>
+                      <h3><strong>Vessel</strong></h3>
+                      <p>Decubre diseños personalizados <br>
+                          y máxima interactividad.
+                      </p>
+                      <button class="possible navigation">Seleccionar</button>
+                  </div>
+              </div>
+              <div class="option" value="2500">
+                  <img src="" alt="">
+                  <div>
+                      <span class="icon fa-compass"></span>
+                      <h3><strong>Tanker</strong></h3>
+                      <p>Construcción integral, incluyendo diseño <br>
+                      y navegación por página.</p>
+                      <button class="possible navigation">Seleccionar</button>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <hr>
-        <section id="content">
-            <div class="inner">
-                <h2>Precio final</h2>
-                <p>Recuerda que lo que se observa es sólo un estimado.<br>
-                Podemos adaptar aún más, así como descartar opciones que no necesites.
-                </p>
-            </div>
-        </section>
-        <hr>
+      <hr>
+      <section id="content">
+          <div class="inner">
+              <h2>Precio final</h2>
+              <p>Recuerda que lo que se observa es sólo un estimado.<br>
+              Podemos adaptar aún más, así como descartar opciones que no necesites.
+              </p>
+          </div>
+      </section>
+      <hr>
 
 
-        <footer id="footer">
-            <div class="inner">
+      <footer id="footer">
+          <div class="inner">
 
-                <h3>Contacto</h3>
+              <h3>Contacto</h3>
 
-                <form action="#" method="post">
+              <form action="#" method="post">
 
-                    <div class="field half first">
-                        <label for="name">Nombre</label>
-                        <input name="name" id="name" type="text" placeholder="Name">
-                    </div>
-                    <div class="field half">
-                        <label for="email">Email</label>
-                        <input name="email" id="email" type="email" placeholder="Email">
-                    </div>
-                    <div class="field">
-                        <label for="message">Cuéntanos lo que sea</label>
-                        <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-                    </div>
-                    <ul class="actions">
-                        <li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
-                    </ul>
-                </form>
+                  <div class="field half first">
+                      <label for="name">Nombre</label>
+                      <input name="name" id="name" type="text" placeholder="Name">
+                  </div>
+                  <div class="field half">
+                      <label for="email">Email</label>
+                      <input name="email" id="email" type="email" placeholder="Email">
+                  </div>
+                  <div class="field">
+                      <label for="message">Cuéntanos lo que sea</label>
+                      <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                  </div>
+                  <ul class="actions">
+                      <li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
+                  </ul>
+              </form>
 
-                <div class="copyright">
-                    Guadalajara, Jalisco, México.
-                </div>
+              <div class="copyright">
+                  Guadalajara, Jalisco, México.
+              </div>
 
-            </div>
-        </footer>
+          </div>
+      </footer>
     <script src="{% static 'landing/index.js' %}"></script>
     <script src="{% static 'landing/pricing.js' %}"></script>
 	<script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>

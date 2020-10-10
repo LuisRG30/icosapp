@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def index(request):
-    return render(request, "landing/index.html")
+    return render(request, "landing/index.html",{"nombre": "index"})
 
 def pricing(request):
     return render(request, "landing/pricing.html")
