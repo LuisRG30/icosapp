@@ -1,16 +1,8 @@
+{% extends 'landing/layout.html' %}
 {% load static %}
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Icosapp</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
-        <link rel="stylesheet" href="{% static 'landing/pricing.css' %}"/>
-		<link rel="icon" href="{% static 'landing/icosahedron.png' %}" type="image/icon type">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
+{% block css %} <link rel="stylesheet" href="{% static 'landing/pricing.css' %}"/> {% endblock %}
+<!DOCTYPE html>
+{% block body %}
         <section id="banner">
             <div class="inner">
                 <header>
@@ -305,11 +297,11 @@
 
         <footer id="footer">
             <div class="inner">
-    
+
                 <h3>Contacto</h3>
-    
+
                 <form action="#" method="post">
-    
+
                     <div class="field half first">
                         <label for="name">Nombre</label>
                         <input name="name" id="name" type="text" placeholder="Name">
@@ -326,15 +318,14 @@
                         <li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
                     </ul>
                 </form>
-    
+
                 <div class="copyright">
                     Guadalajara, Jalisco, México.
                 </div>
-    
+
             </div>
         </footer>
-    </body>
     <script src="{% static 'landing/index.js' %}"></script>
     <script src="{% static 'landing/pricing.js' %}"></script>
 	<script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>
-</html>
+{% endblock %}

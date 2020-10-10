@@ -1786,7 +1786,7 @@
 		}
 
 /* Section/Article */
-		
+
 
 	section.special, article.special {
 		text-align: center;
@@ -2892,7 +2892,7 @@
 	}
 
 
-	
+
 /* Nav */
 	#navp {
 		margin-right: 2em;
@@ -3015,7 +3015,7 @@
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background: #273a63;	
+		background: #273a63;
 		/*background-image: url("bannerbackground.png");*/
 		background-size: cover;
 		background-position: bottom;
