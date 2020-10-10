@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Icosapp</title>
+		<title>Icosaedro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
@@ -303,36 +303,7 @@
         <hr>
 
 
-        <footer id="footer">
-            <div class="inner">
-    
-                <h3>Contacto</h3>
-    
-                <form action="#" method="post">
-    
-                    <div class="field half first">
-                        <label for="name">Nombre</label>
-                        <input name="name" id="name" type="text" placeholder="Name">
-                    </div>
-                    <div class="field half">
-                        <label for="email">Email</label>
-                        <input name="email" id="email" type="email" placeholder="Email">
-                    </div>
-                    <div class="field">
-                        <label for="message">Cuéntanos lo que sea</label>
-                        <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-                    </div>
-                    <ul class="actions">
-                        <li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
-                    </ul>
-                </form>
-    
-                <div class="copyright">
-                    Guadalajara, Jalisco, México.
-                </div>
-    
-            </div>
-        </footer>
+        {% include "landing/footer.html" %}
     </body>
     <script src="{% static 'landing/index.js' %}"></script>
     <script src="{% static 'landing/pricing.js' %}"></script>
