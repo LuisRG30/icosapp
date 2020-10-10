@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Icosaedro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
+		<link rel="icon" href="{% static 'landing/icosahedron.png' %}" type="image/icon type">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+    <!-- Three -->
+        <section id="three" class="wrapper">
+            <div class="inner">
+                <header class="align-center">
+                    <h2>Comúnicate con nosotros</h2>
+                    <p>Asesoría Continua</p>
+                </header>
+                <div class="image left">
+                    <img src="{% static 'landing/grey.png' %}" alt="Pic 01" style="width: 8em;"/>
+                </div>
+                <p>Revisamos contigo la integración de tu aplicación de principio a fin. Nuestro equipo de desarrolladores te escucha desde el primer momento para que diseño y funcionalidad sean uno mismo.</p>
+
+                <div class="image round right">
+                    <img src="{% static 'landing/blue.png' %}" alt="Pic 02" style="width: 25em;"/>
+                </div>
+                <p>Interactúa con nuestro equipo por correo y llamadas con el fin de ajustar presupuestos y planear el despliegue final. ¡Hacemos lo que nos pidas!</p>
+                <a href="{% url 'landing:desarrollo' %}" class="button">Siguiente</a>
+            </div>
+            
+        </section>
+
+    <!-- Footer -->
+        {% include "landing/footer.html" %}
+	</body>
+	<script src="{% static 'landing/index.js' %}"></script>
+    <script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>
+</html>

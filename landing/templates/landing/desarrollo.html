@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Icosaedro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
+		<link rel="icon" href="{% static 'landing/icosahedron.png' %}" type="image/icon type">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+    <!-- Three -->
+        <section id="three" class="wrapper">
+            <div class="inner">
+                <header class="align-center">
+                    <h2>Revisa el Desarrollo</h2>
+                    <p>Observa el progreso y ajusta a tu gusto</p>
+                </header>
+                <div class="image left">
+                    <img src="{% static 'landing/purple.png' %}" alt="Pic 01" style="width: 10em;"/>
+                </div>
+                <p>Recibe datos de desarrolladores sobre el progreso de tu páginade manera continua. Danos tus recomendaciones y sugerencias en cualquier etapa de avance.</p>
+
+                <div class="image right">
+                    <img src="{% static 'landing/red.png' %}" alt="Pic 02" style="width: 30em;"/>
+                </div>
+                <p><strong>Personaliza</strong> tus apliaciones y diferénciate de la competencia. <br>
+                    Elige estilos, experiencia de usuario y flujo de clientes.
+                </p>
+                <p>Nos comprometemos con lo prometido, hacemos <strong>Diseño a la Medida</strong> de principio a fin. <br>
+                Te entregamos tu producto y continuamos con el <strong>Servicio de Mantenimiento</strong> acordado.
+                </p>
+                <a href="{% url 'landing:pricing' %}" class="button">Precios Mantenimiento</a>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        {% include "landing/footer.html" %}
+	</body>
+	<script src="{% static 'landing/index.js' %}"></script>
+    <script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>
+</html>
