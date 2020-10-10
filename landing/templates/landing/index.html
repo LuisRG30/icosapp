@@ -121,9 +121,6 @@
 						<h3>Sitios Web<br /> Integrados</h3>
 					</header>
 					<p>Elige exactamente los recursos que necesitas.<br />Seguridad informática desde producción.<br />Cloud computing escalable.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 				<article>
 					<div class>
@@ -133,9 +130,6 @@
 						<h3>Aplicaciones móviles<br /> Híbridas</h3>
 					</header>
 					<p>Compatibilidad iOS y Android.<br />Aplicaciones responsivas y conectadas a la red.<br />Desarrollo económico en plataformas nativas.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 			</div>
 		</div>
@@ -153,9 +147,6 @@
 						<h3>Administración<br /> Accesible</h3>
 					</header>
 					<p>Vinculamos bases de datos directamente a interfaces administrativas.<br />Genera y descarga facturas de inmediato.<br />Personaliza tu aplicación para llevarla al siguiente nivel.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 				<article>
 					<div class>
@@ -165,9 +156,6 @@
 						<h3>E-Commerce<br /> Escalable</h3>
 					</header>
 					<p>Acepta una variedad de servicios de pago.<br />Permite pagos al instante o suscripciones.<br />Recibe fondos directo en tu cuenta.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 			</div>
 		</div>
@@ -244,35 +232,6 @@
 </section>
 
 <!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-
-			<h3>Contacto</h3>
-
-			<form action="#" method="post">
-
-				<div class="field half first">
-					<label for="name">Nombre</label>
-					<input name="name" id="name" type="text" placeholder="Name">
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input name="email" id="email" type="email" placeholder="Email">
-				</div>
-				<div class="field">
-					<label for="message">Cuéntanos lo que sea</label>
-					<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-				</div>
-				<ul class="actions">
-					<li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
-				</ul>
-			</form>
-
-			<div class="copyright">
-				Guadalajara, Jalisco, México.
-			</div>
-
-		</div>
-	</footer>
+	{% include "landing/footer.html" %}
 
 {% endblock %}

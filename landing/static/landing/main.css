@@ -16,7 +16,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
+		font-size: 110%;
 		font: inherit;
 		vertical-align: baseline;
 	}
@@ -1766,6 +1766,7 @@
 		margin: 0 auto;
 		width: 90%;
 		height: inherit;
+		text-align: center;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -2314,10 +2315,12 @@
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+		text-align: center;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			text-align: center;
+
 		}
 
 		ul.alt {
@@ -3241,11 +3244,15 @@
 			color: #FFF;
 		}
 
-		#footer .copyright {
+		#footer right {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
 			margin: 0 0 2em 0;
 			padding: 0;
+		}
+
+		.copyright {
+			padding: 1%;
 		}
 
 			#footer .copyright a {
@@ -3272,3 +3279,24 @@
 			}
 
 		}
+
+
+		.loader {
+			position: relative;
+			float: center;
+			z-index: 1;
+			border: 0.5em solid #f3f3f3; /* Light grey */
+			border-top: 0.5em solid #4a4e50; /* Blue */
+			border-radius: 50%;
+			width: 5em;
+			height: 5em;
+			animation: spin 2s linear infinite;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		  }
+		  
+		  @keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		  }
