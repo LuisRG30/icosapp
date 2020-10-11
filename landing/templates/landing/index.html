@@ -1,6 +1,21 @@
 {% extends "landing/layout.html" %}
 {% load static %}
 {% block body %}
+
+<!-- Header -->
+<header id="header">
+	<div class="inner">
+		<a onClick="smoothScroll('#banner')" class="logo"><strong>ICOSAEDRO</strong> Application</a>
+		<nav id="nav">
+			<a onClick="smoothScroll('#products')">Productos</a>
+			<a onClick="smoothScroll('#tech')">Tecnología</a>
+			<a onClick="smoothScroll('#information')">Información</a>
+			<a onClick="smoothScroll('#footer')">Contacto</a>
+		</nav>
+		<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+	</div>
+</header>
+
 <!-- Banner -->
 	<section id="banner">
 		<div class="inner">
@@ -44,7 +59,7 @@
 			</div>
 
 			<footer id="start">
-				<a href="{% url 'landing:pricing' %}" class="button">Empezar</a>
+				<a href="{% url 'landing:select' %}" class="button">Empezar</a>
 			</footer>
 		</div>
 	</section>
@@ -76,16 +91,25 @@
 					<h2>¿Qué hago?</h2>
 					<div class="flex">
 						<div class="stepdiv zoom">
+							<a href="{% url 'landing:select' %}" class="stepa">
 							<img src="{% static 'landing/step1.png' %}" alt="" class="stepimg">
 							<h3>Encuentra lo que buscas</h3>
+							<p>Navegando en la página, encuentra las opciones que satisfagan tus nececidades. <br> También puedes dejar tus datos de contacto con tus dados en el apartado de contacto.</p>
+							</a>
 						</div>
 						<div class="stepdiv zoom">
+							<a href="{% url 'landing:contacto' %}" class="stepa">
 							<img src="{% static 'landing/step2.png' %}" alt="" class="stepimg">
 							<h3>Comunícate con nosotros</h3>
+							<p>Una vez en contacto con nuestro equipo, te haremos saber lo necesario para poner en marcha tu presencia en internet. <br> Te ayudamos a identificar qué recursos necesitas.</p>
+							</a>
 						</div>
 						<div class="stepdiv zoom">
+							<a href="{% url 'landing:desarrollo' %}" class="stepa">
 							<img src="{% static 'landing/step3.png' %}" alt="" class="stepimg">
 							<h3>Revisa continuamente el desarrollo</h3>
+							<p>Puedes revisar el progreso de tu pedido directamente con los desarrolladores. <br> Ve los cambios suceder en tiempo real.</p>
+							</a>
 						</div>
 					</div>
 				</section>
@@ -111,9 +135,6 @@
 						<h3>Sitios Web<br /> Integrados</h3>
 					</header>
 					<p>Elige exactamente los recursos que necesitas.<br />Seguridad informática desde producción.<br />Cloud computing escalable.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 				<article>
 					<div class>
@@ -123,9 +144,6 @@
 						<h3>Aplicaciones móviles<br /> Híbridas</h3>
 					</header>
 					<p>Compatibilidad iOS y Android.<br />Aplicaciones responsivas y conectadas a la red.<br />Desarrollo económico en plataformas nativas.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 			</div>
 		</div>
@@ -143,9 +161,6 @@
 						<h3>Administración<br /> Accesible</h3>
 					</header>
 					<p>Vinculamos bases de datos directamente a interfaces administrativas.<br />Genera y descarga facturas de inmediato.<br />Personaliza tu aplicación para llevarla al siguiente nivel.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 				<article>
 					<div class>
@@ -155,9 +170,6 @@
 						<h3>E-Commerce<br /> Escalable</h3>
 					</header>
 					<p>Acepta una variedad de servicios de pago.<br />Permite pagos al instante o suscripciones.<br />Recibe fondos directo en tu cuenta.</p>
-					<footer>
-						<a href="#" class="button">Ver Más</a>
-					</footer>
 				</article>
 			</div>
 		</div>
@@ -173,6 +185,7 @@
 			Diseñamos arquitecturas una sola vez para el soporte de todas tus aplicaciones.
 			</p>
 		</header>
+		<hr>
 		<div class="flex">
 			<div class="techel flex">
 				<div class="zoom">
@@ -225,9 +238,12 @@
 					<h3>Stripe</h3>
 					<p>Acepta pagos de todo tipo, de todo el mundo.</p>
 				</div>
+
+
 			</div>
 		</div>
 	</div>
 </section>
-
+<!-- Footer -->
+{% include "landing/footer.html" %}
 {% endblock %}

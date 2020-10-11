@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Icosaedro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
+		<link rel="icon" href="{% static 'landing/icosahedron.png' %}" type="image/icon type">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+    <!-- Three -->
+        <section id="three" class="wrapper">
+            <div class="inner">
+                <header class="align-center">
+                    <h2>Descubre soluciones para ti</h2>
+                    <p>Nuestros Servicios</p>
+                </header>
+                <div class="image left">
+                    <img src="{% static 'landing/icosahedron.png' %}" alt="Pic 01" style="width: 8em;"/>
+                </div>
+                <p><strong>Sitios Web</strong> integrados, estéticos y funcionales. <br>Encuéntrate con poderosos servidores, almacenamiento de archivos y bases de datos en la nube, así como un <strong>E-Commerce</strong> robusto.</p>
+
+                <div class="image right">
+                    <img src="{% static 'landing/orange.png' %}" alt="Pic 02" style="width: 25em;"/>
+                </div>
+                <p><strong>Aplicaciones móviles</strong> responsivas, con enfoque en la experiencia de usuario. <br>
+                    Procesa compras, accede a mapas, cámara y mucho más del potencial de los dispositivos móviles.
+                </p>
+                <p>Responde a lo que necesita tu negocio con nuestras interfaces <strong>Business</strong>. <br>
+                Elige exactamente cómo quieres que tus empleados alimenten tu sistema y recibe información detallada sobre ventas, inventarios, desempeño y más.
+                </p>
+                <a href="{% url 'landing:contacto' %}" class="button">Siguiente</a>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        {% include "landing/footer.html" %}
+	</body>
+	<script src="{% static 'landing/index.js' %}"></script>
+    <script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>
+</html>

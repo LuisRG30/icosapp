@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>ICOSAEDRO</title>
+		<title>Icosaedro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="stylesheet" href="{% static 'landing/main.css' %}"/>
@@ -11,19 +11,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<a onClick="smoothScroll('#banner')" class="logo"><strong>ICOSAEDRO</strong> Application</a>
-				<nav id="nav">
-					<a onClick="smoothScroll('#products')">Productos</a>
-					<a onClick="smoothScroll('#tech')">Tecnología</a>
-					<a onClick="smoothScroll('#information')">Información</a>
-					<a onClick="smoothScroll('#footer')">Contacto</a>
-				</nav>
-				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-			</div>
-		</header>
 		{% if nombre != "index" %}
 		<!-- Header -->
 			<section id="banner">
@@ -38,38 +25,6 @@
 			{% endif %}
       {% block body %}
 			{% endblock %}
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-
-					<h3>Contacto</h3>
-
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Nombre</label>
-							<input name="name" id="name" type="text" placeholder="Name">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
-						<div class="field">
-							<label for="message">Cuéntanos lo que sea</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
-						</ul>
-					</form>
-
-					<div class="copyright">
-						Guadalajara, Jalisco, México.
-					</div>
-
-				</div>
-			</footer>
 	</body>
 	<script src="{% static 'landing/index.js' %}"></script>
 	<script src="https://kit.fontawesome.com/c658774e7e.js" crossorigin="anonymous"></script>

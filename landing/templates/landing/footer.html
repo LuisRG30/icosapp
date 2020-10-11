@@ -1,0 +1,30 @@
+<footer id="footer">
+    <div class="inner">
+
+        <h3>Contacto</h3>
+        <form id ="message-form" action="{% url 'landing:message' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ request.path }}">
+            <div class="field half first">
+                <label for="name">Nombre</label>
+                {{ messageform.name }}
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                {{ messageform.email }}
+            </div>
+            <div class="field">
+                <label for="message">Cuéntanos lo que sea</label>
+                {{ messageform.message }}
+            </div>
+            <ul class="actions">
+                <li><input id="message-button" value="Enviar Mensaje" class="button alt" type="submit"></li>
+            </ul>
+        </form>
+
+        <div class="copyright">
+            Guadalajara, Jalisco, México.
+        </div>
+
+    </div>
+</footer>

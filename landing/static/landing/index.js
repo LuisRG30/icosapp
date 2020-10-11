@@ -9,3 +9,4 @@ function paddedSmoothScroll(id) {
         behavior: 'smooth'
     });
 }
+
